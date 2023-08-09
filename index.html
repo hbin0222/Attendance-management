@@ -11,7 +11,7 @@
     <script>
         function getSound(){
             const name = document.getElementById('name').value
-            fetch(`http://localhost:3000/${name}`)
+            fetch(`https://port-0-test-eu1k2llkw582gg.sel4.cloudtype.app/${name}`)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data)

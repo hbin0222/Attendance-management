@@ -1,0 +1,12 @@
+name: test
+app: node@16
+options:
+  env:
+    - name: NODE_ENV
+      value: production
+  ports: 3000
+  start: node index.js
+context:
+  git:
+    url: https://github.com/hbin0222/Attendance-management.git
+    branch: main
